@@ -3,7 +3,7 @@ pipeline{
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('theva2811')
+		DOCKERHUB_CREDENTIALS=credentials('theva2811 dckr_pat_P3p0J1BNM2fql8yraE-G1TZGwJc ')
 	}
 
 	stages {
@@ -18,7 +18,7 @@ pipeline{
 		stage('Login') {
 
 			steps {
-				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u theva2811 --dckr_pat_P3p0J1BNM2fql8yraE-G1TZGwJc-stdin'
+				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
 			}
 		}
 
