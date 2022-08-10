@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t dev .'
+				sh 'docker build theva2811/node-pipelineproject:latest.'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push dev theva2811/node-pipelineproject:latest'
+				sh 'docker push theva2811/node-pipelineproject:latest'
 			}
 		}
 	}
