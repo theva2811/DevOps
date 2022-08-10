@@ -18,7 +18,7 @@ pipeline{
 		stage('Login') {
 
 			steps {
-				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u theva2811 --7598117822t-stdin'
+				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u theva2811 --dckr_pat_P3p0J1BNM2fql8yraE-G1TZGwJc-stdin'
 			}
 		}
 
