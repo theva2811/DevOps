@@ -3,7 +3,7 @@ pipeline{
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('theva2811 dckr_pat_P3p0J1BNM2fql8yraE-G1TZGwJc ')
+		DOCKERHUB_CREDENTIALS=credentials('jenkins-test')
 	}
 
 	stages {
